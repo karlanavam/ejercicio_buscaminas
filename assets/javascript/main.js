@@ -55,13 +55,18 @@ function cambiarAColor() {
 function explotarBombas() {
 	alert("Perdiste  :( ");
 
-	for (var i = 0; i < bombaLongitud; i++) {
+	var seccion = document.getElementById("contenedorTablaBuscaminas");
+	var tabla = document.getElementById("tablaBuscaminas");
+
+	seccion.removeChild(tabla);
+
+	/*for (var i = 0; i < bombaLongitud; i++) {
 		celdasBomba[i].innerHTML = "☠";
-	}	
+	}	*/
 }
 
 function revelarNumero_1 () {
-	this.inner Text = "1";
+	this.innerText = "1";
 }
 
 function revelarNumero_2 () {

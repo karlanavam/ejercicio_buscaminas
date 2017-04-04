@@ -1,18 +1,27 @@
+body {
+	background-color: #FF941C;
+
+}
+
 h1{
 	font-family: Tahoma;
 	text-align: center;
-	font-size: 2em;
+	font-size: 3em;
+	color: #FFFFFF;
 }
 
 table {
+	background-color: #FFBB7C;
+	color: #FFFFFF;
 	border-collapse: collapse;
 	border: 1px solid black;
-	width: 80%;
-	height: 480px;
+	width: 60%;
+	height: 350px;
 	text-align: center;
 	font-family: Tahoma;
 	align-items: center;
 	align-content: center;
+	margin: 0 auto;
 }
 
 th, td {
@@ -21,10 +30,24 @@ th, td {
 	height: 50px;
 	text-align: center;
 	font-size: 2em;
+	color: color: #FFFFFF;
 }
 
 section{
 	text-align: center;
+
+}
+
+button {
+	background-color: #E62929;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left:600px
 }
 
 

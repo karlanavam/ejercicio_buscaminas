@@ -20,15 +20,17 @@ for (var i = 0 ; i < vaciasLongitud; i++) {
    celdasVacias[i].addEventListener('click', cambiarAColor, false); 
 }
 
+
 /Ciclos celdas vacias a bomba/
 for (var i = 0 ; i < bombaLongitud; i++) {
 	celdasBomba[i] = document.getElementsByClassName("bomba")[i];
 }
 for (var i = 0 ; i < bombaLongitud; i++) {
    celdasBomba[i].addEventListener('click', explotarBombas, false);
+} 
 
 
-}
+
 
 /Ciclos celdas vacias a numero1/
 for (var i = 0 ; i < numeroLongitud1; i++) {
@@ -37,6 +39,7 @@ for (var i = 0 ; i < numeroLongitud1; i++) {
 for (var i = 0 ; i < numeroLongitud1; i++) {
    celdasNumero1[i].addEventListener('click', revelarNumero_1, false); 
 }
+
 
 /Ciclos celdas vacias a numero2/
 for (var i = 0 ; i < numeroLongitud2; i++) {
@@ -47,9 +50,8 @@ for (var i = 0 ; i < numeroLongitud2; i++) {
 }
 
 
-
 function cambiarAColor() {
-	this.style.backgroundColor = "red";
+	this.style.backgroundColor = "#F55728";
 }
 
 function explotarBombas() {
@@ -59,10 +61,7 @@ function explotarBombas() {
 	var tabla = document.getElementById("tablaBuscaminas");
 
 	seccion.removeChild(tabla);
-
-	/*for (var i = 0; i < bombaLongitud; i++) {
-		celdasBomba[i].innerHTML = "☠";
-	}	*/
+	seccion.innerHTML = "<img src='assets/imagenes/giphy.gif'>"
 }
 
 function revelarNumero_1 () {
@@ -72,3 +71,4 @@ function revelarNumero_1 () {
 function revelarNumero_2 () {
 	this.innerText = "2";
 }
+ 
